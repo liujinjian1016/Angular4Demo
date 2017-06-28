@@ -1,0 +1,5 @@
+.unopened-average{display: table-cell;width: 1%;text-align: center;}
+.unopened-average>div{display: inline-block;}
+.unopened-average>p{color: #5c5658}
+.error-footer{position: fixed;bottom: 0px;background: #efeff4;padding: 15px 0}
+.error-main{padding-bottom: 120px}

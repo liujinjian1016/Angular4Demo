@@ -1,0 +1,189 @@
+.unopened-zhimaFail{background: #efeff4;position: absolute;width: 100%;height: 100%}
+.unopened-zhima-main{
+	position: absolute;width: 100%;bottom:0;top:71px;
+}
+
+.unopened-zhimaFail-main{padding-bottom: 110px}
+
+.unopened-zhimaFail-footerMain{padding: 0 25%;}
+
+
+.unopened-zhimaFail-footerMain>div{
+	display: inline-block;
+}
+
+
+.debt-credit-step2sesame-btn-back{display: inline-block;}
+
+.debt-credit-step2-accrediterror{
+	width:155px;
+	height:90px;
+	margin:0 auto;
+	padding-top: 50px;
+
+}
+.debt-credit-step2-accrediterror-icon{
+	width:100%;
+	height:75.5px;
+	background:url(../../i/debt-credit/step2-accredit-error.png) no-repeat left top;
+	background-size: 126px 60.5px;	
+}
+
+.debt-credit-step2-main {
+    position: absolute;
+    width: 100%;
+    top:0;
+    bottom: 65px;
+}
+
+.debt-credit-step2accrediterror-footer{
+	padding:15px 0;
+	background: #efeff4;
+	position: fixed;
+	bottom: 0;
+    width: 100%;
+}
+
+
+
+.debt-credit-step2sesame-btn-accreditagain{
+	float:right;
+}
+
+.debt-credit-step2-sesamedial{
+	position: relative;
+	width:215px;
+	height:150px;
+	margin: 0 auto 120px auto;
+	padding-top: 60px;
+	background:url(../../i/debt-credit/sesamedial.png) no-repeat left bottom;
+	background-size: 215px 150px;
+}
+.debt-credit-step2-sesame-pointer-warp{
+	-webkit-transform:rotate(-20deg);
+}
+.debt-credit-step2-sesame-pointer{
+    width:0;
+    height:0;
+    border-width:2px 93px 2px 0;
+    border-style:solid;
+    border-color:transparent white transparent transparent;/*透明 灰 透明 透明 */
+	margin:107px 0 0 14px;
+	-webkit-transform-origin:right center;
+	-webkit-transform:rotate(-20deg);
+}
+
+.debt-credit-step2-sesame-pointer-circle{
+	width:15px;
+	height:15px;
+	background-color:#0b9de1;  
+	border-radius:15px;
+	position: absolute;
+	z-index: 5;
+	top:162px;
+	left:100px;	
+}
+
+.debt-credit-step2-sesame-footer{
+	width:100%;
+    margin: 0 auto;	
+
+}
+
+.debt-credit-steps-btn-bottom{
+	width:90.6%;
+	height:32px;
+	background-color: #25aff5;
+	margin:0 auto;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 32px;
+}
+
+.debt-credit-step2-sesamecopy-height{
+	position: absolute;
+	width:100%;
+	top:0;
+	bottom:100px;
+}
+
+
+.debt-credit-sesame-diagram-desc{
+	width:100%;
+	text-align: center;
+	padding-top:30px;
+}
+.debt-credit-sesame-diagram{
+	position: relative;
+	width:192.5px;
+	height:171.5px;
+	background:url(../../i/debt-credit/debt-credit-sesame-diagram.png) no-repeat center center;
+	background-size: 192.5px 171.5px;
+	margin: 25px auto 120px auto;
+}
+.debt-credit-sesame-diagram>div{
+	position: absolute;
+	width:100px;
+	height:20px;
+	text-align: center;
+}
+.debt-credit-sesame-diagram div:nth-child(1){
+	left:49px;
+	top:23px;
+}
+.debt-credit-sesame-diagram div:nth-child(2){
+	left:-40px;
+	top:85px;		
+}
+.debt-credit-sesame-diagram div:nth-child(3){
+	left:132px;
+	top:85px;		
+}
+.debt-credit-sesame-diagram div:nth-child(4){
+	left:-12px;
+	top:175px;	
+}
+.debt-credit-sesame-diagram div:nth-child(5){
+	left:108px;
+	top:175px;
+}
+
+.debt-credit-step2-sesame-score{
+	width:60px;
+	height:60px;
+	position: absolute;
+	top:180px;
+	margin-left: 50%;
+	left:-30px;
+}
+.debt-credit-step2-sesame-score div:nth-child(1){
+	width:57px;
+}
+.debt-credit-step2-sesamecopy-footer{
+	width:100%;
+}
+
+/* baifenbi */
+.debt-credit-step2-sesame-bai{
+	width: 100%;
+	margin-top: 75px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+}
+.debt-credit-step2-sesame-bai span{
+	position: relative;
+	padding-left: 20px;
+}
+.debt-credit-step2-sesame-bai span:before{
+	content: "";
+	width: 14px;
+	height: 15px;
+	background: url(../../i/debt-credit/jiantou.png);
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0px;
+	top: 2px;
+}
+
+

@@ -1,0 +1,125 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-backicon_hq {
+  background-image: url(bankIcon.png);
+  background-position: -123px 0px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bank_icon_alipay {
+  background-image: url(bankIcon.png);
+  background-position: -492px -123px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bank_icon_huabei {
+  background-image: url(bankIcon.png);
+  background-position: -492px -246px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bankicon_default {
+  background-image: url(bankIcon.png);
+  background-position: -369px 0px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bankicon_gd {
+  background-image: url(bankIcon.png);
+  background-position: 0px -123px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bankicon_gf {
+  background-image: url(bankIcon.png);
+  background-position: -123px -123px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bankicon_gs {
+  background-image: url(bankIcon.png);
+  background-position: -246px 0px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bankicon_hx {
+  background-image: url(bankIcon.png);
+  background-position: -246px -123px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bankicon_js {
+  background-image: url(bankIcon.png);
+  background-position: 0px -246px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bankicon_jt {
+  background-image: url(bankIcon.png);
+  background-position: -123px -246px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bankicon_ms {
+  background-image: url(bankIcon.png);
+  background-position: -246px -246px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bankicon_ny {
+  background-image: url(bankIcon.png);
+  background-position: 0px 0px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bankicon_pa {
+  background-image: url(bankIcon.png);
+  background-position: -369px -123px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bankicon_pf {
+  background-image: url(bankIcon.png);
+  background-position: -369px -246px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bankicon_xy {
+  background-image: url(bankIcon.png);
+  background-position: 0px -369px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bankicon_yz {
+  background-image: url(bankIcon.png);
+  background-position: -123px -369px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bankicon_zg {
+  background-image: url(bankIcon.png);
+  background-position: -246px -369px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bankicon_zs {
+  background-image: url(bankIcon.png);
+  background-position: -369px -369px;
+  width: 123px;
+  height: 123px;
+}
+.icon-bankicon_zx {
+  background-image: url(bankIcon.png);
+  background-position: -492px 0px;
+  width: 123px;
+  height: 123px;
+}

@@ -1,0 +1,570 @@
+@charset "utf-8";
+.wrap{background-color: #efeff4;}
+/*icon*/
+[class^='billicon-'] {
+  background: url(../i/bill/billicon_01.png) no-repeat;
+  background-size: 96px 320px;
+  display: inline-block;
+}
+/*还款记录图标*/
+.billicon-payment{
+	width:12px;
+	height:12px;
+	background-position: 0 0;
+	vertical-align: middle;
+}
+/*资金流水图标*/
+.billicon-flow{
+  width: 16px;
+  height: 16px;
+  background-position: 0 -14px;
+	vertical-align: middle;
+}
+/*资金流水图标*/
+.billicon-record{
+    width: 16px;
+    height: 18px;
+    background-position: 0 -39px;
+    vertical-align: middle;
+}
+/*逾期疑问*/
+.billicon-overdueqa{
+  width: 16px;
+  height: 16px;
+  background-position: 0 -64px;
+	vertical-align: middle;
+}
+
+
+/*借款详情头部*/
+.bill-noborderlist{background-color: #fff;padding:20px 15px 15px;border-bottom: 1px solid #e6e6e6;}
+.bill-itemname{font-size: 13px;color: #000;float: left;line-height: 1;}
+.bill-itemvalue{font-size: 12px;color:#969696;float: right;line-height: 1;}
+ul.bill-noborderlist li{padding:7px 0 7px}
+ul.bill-noborderlist li:after { content: '';  display: block; clear: both}
+
+.bill-space{
+	padding:20px 0 13px;
+	text-align: center;
+	background-color: #efeff4;
+}
+.bill-title{
+	font-size: 12px;
+	color: rgb(150, 150, 150);
+	display: inline-block;
+/*	background-color: #ceced6;
+	margin: 0 auto;
+	text-align: center;
+	height: 20px;
+	line-height:1;
+	border-radius: 10px;
+	padding:5px 10px;*/
+}
+.bill-title:before,.bill-title:after{
+	content: "";
+	width:3px;
+	height: 3px;
+	background-color: rgb(150, 150, 150);
+	border-radius: 100%;
+	display: inline-block;
+	margin-right: 1em;
+	vertical-align: middle;
+}
+.bill-title:after{
+	margin-left: 1em;
+	margin-right: 0;
+}
+.bill-record{
+	padding:0 10px;
+}
+.bill-record table{
+	width:100%;
+	border:1px solid #e1e1e6;
+	border-radius: 5px;
+}
+.bill-record table tr:nth-of-type(odd){
+	background-color: #fff;
+}
+.bill-record table tr:nth-of-type(even){
+	background-color: #fafafc;
+}
+.bill-record table tr{
+	text-align: center;
+}
+.bill-record table tr th{
+	font-size: 12px;
+	color: #000;
+	line-height: 1;
+	padding:10px 0;
+}
+.bill-record table tr td{
+	font-size: 12px;
+	line-height: 1;
+	padding:14px 0;	
+	border-top: 1px solid #e6e6e6;
+}
+.bill-record table tr th:first-of-type{
+	border-top-left-radius: 5px;
+	position: relative;
+}
+.bill-record table tr th:last-of-type{
+	border-top-right-radius: 5px;
+	position: relative;
+}
+.bill-record table tr:last-of-type td:first-of-type{
+	border-bottom-left-radius: 5px;
+}
+.bill-record table tr:last-of-type td:last-of-type{
+	border-bottom-right-radius: 5px;
+}
+.lefthalfcircle{
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	border-bottom:1px solid #efeff4;
+	border-right:1px solid #e6e6e6;
+	border-top:1px solid #efeff4;
+	border-left:1px solid #efeff4;	
+	border-radius: 50%;
+	position: absolute;
+	top: 28px;
+	left: -3px;
+    background-color: #efeff4;
+}
+.righthalfcircle{
+	display:inline-block;
+	width: 6px;
+	height: 6px;
+	border-bottom:1px solid #efeff4;
+	border-right:1px solid #efeff4;
+	border-top:1px solid #efeff4;
+	border-left:1px solid #e6e6e6;	
+	border-radius: 50%;
+	position: absolute;
+	top: 28px;
+	right: -3px;
+    background-color: #efeff4;
+}
+/*已还*/
+.bill-recordpaid{
+	color: #969696;
+}
+.bill-recordstay{
+	color:#000;
+}
+.bill-recordoverdue{
+	color: #F13838;
+}
+/*借款详情*/
+.bill-borrowwrap{
+ position: relative;
+ border: 1px solid #e1e1e6;
+ border-top: 2px solid #e6e6eb;
+ padding-bottom: 5px;
+ background: #fff url(../i/bill/wheel.png) repeat-x;
+ background-position: bottom;
+ border-bottom: none;
+}
+ 
+ul.bill-borrowlistview li{
+	padding:14px 12px 14px 10px;
+	background-color: #fff;
+	border-top: 1px solid #f1f1f5;
+}
+ul.bill-borrowlistview li:first-of-type{
+	border-top: 1px solid #fafafc;
+}
+ul.bill-borrowlistview li > .itemtype{
+	color: #000;
+	font-size: 14px;
+}
+ul.bill-borrowlistview li .itemtime{
+	font-size: 12px;
+	color: rgb( 150, 150, 150 );
+	line-height: 1em;
+}
+ul.bill-borrowlistview li .itemamount{
+	font-size: 18px;
+	float: right;
+	line-height: 1em;
+}
+.bill-borrowpaid{
+	color: #25AFF5;
+}
+.bille-borrowcash{
+	color: #000;
+}
+/*左右圆柱*/
+.bill-leftcolumn{
+	display: inline-block;
+	width: 5px;
+	height:5px;
+	background-color: #b0b0bb;
+	border-top-left-radius: 2.5px;
+	border-bottom-left-radius: 2.5px;
+	border-top: 2px solid #9f9fad;
+	position: absolute;
+	top:-2px;
+	left: -5px;
+}
+.bill-rightcolumn{
+	display: inline-block;
+	width: 5px;
+	height:5px;
+	background-color: #b0b0bb;
+	border-top-right-radius: 2.5px;
+	border-bottom-right-radius: 2.5px;
+	border-top: 2px solid #9f9fad;
+	position: absolute;
+	top:-2px;
+	right: -5px;
+}
+/*还款*/
+.bill-repaymenttitle{
+	padding:20px 14px;
+	color: #fff;
+}
+.bill-repaymentnormal{
+	background-color: #25aff5;
+}
+/*逾期一个月*/
+.bill-repaymentoverdue1month{
+	background: url(../i/bill/overdue.png) no-repeat right top;
+	background-size: 45%;
+	background-color: #fa414d;
+}
+.bill-repaymentoverdueover1month{
+	background: url(../i/bill/over1month.png) no-repeat right top;
+	background-size: 45%;
+	background-color: #1a1a1a;
+}
+@media only screen and (max-width: 320px) {
+	.bill-repaymentoverdue1month{
+		background: url(../i/bill/overdue.png) no-repeat right top;
+		background-size: 50%;
+		background-color: #fa414d;
+	}
+	.bill-repaymentoverdueover1month{
+		background: url(../i/bill/over1month.png) no-repeat right top;
+		background-size: 50%;
+		background-color: #1a1a1a;
+	}
+}
+.bill-overduestay{
+	padding:19px 15px;
+	background-color: #fff;
+	border-bottom: 1px solid #e6e6e6;
+}
+.bill-overduestay > .bill-overduedouble{
+	float: left;
+	width: 50%;
+	text-align: left;
+}
+.bill-overduestay > .bill-overduedouble > .text{
+	font-size: 12px;
+	color: rgb( 150, 150, 150 );
+}
+.bill-overduestay > .bill-overduedouble > .textvalue{
+	font-size: 18px;
+	color: #000;
+}
+.bill-rightarrow:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+    top: -1px;
+}
+.bill-grayrightarrow:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+  border-right: 2px solid #e6e6e6;
+  border-top: 2px solid #e6e6e6;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bill-arrowdown:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+  border-right: 2px solid #ccc;
+  border-top: 2px solid #ccc;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bill-arrowup:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+  border-right: 2px solid #ccc;
+  border-top: 2px solid #ccc;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bill-repaymentnormal > .bill-repayamount{
+	font-size: 40px;
+	line-height: 1em;
+	margin: 12px 0 20px;
+}
+.bill-repaymentoverdue1month > .bill-repayamount,.bill-repaymentoverdueover1month > .bill-repayamount{
+	font-size: 40px;
+	line-height: 1em;
+	margin: 12px 0 44px;
+}
+a.bill-gotodetail,a.bill-gotodetail:visited{
+	color: #fff;
+	float: right;
+}
+.bill-nextrepaydate{
+	font-size: 17px;
+	margin-bottom: 30px;
+}
+.bill-menu{
+	border-top: 1px solid #e1e1e6;
+	border-bottom: 1px solid #e1e1e6;
+	padding-left: 15px;
+	background-color: #fff;
+}
+.bill-menu ul li{
+	border-bottom: 1px solid #efeff4;
+	
+}
+.bill-menu ul li a,.bill-menu ul li a:visited{
+	font-size: 14px;
+	color: #000;
+	padding:14px 15px 14px 0;
+	display: block;
+}
+.bill-menu ul li a:active{
+	background-color: #FAFAFC;
+}
+.bill-menu ul li:last-of-type{
+	border-bottom: none;
+}
+.bill-bottomhelp{
+	position: fixed;
+	bottom: 15px;
+	text-align: center;
+	width: 100%;
+}
+@media only screen and (max-height: 480px) {
+	.bill-bottomhelp{
+	position: fixed;
+	bottom: 5px;
+	text-align: center;
+	width: 100%;
+}
+}
+a.bill-helpcentertext,a.bill-helpcentertext:visited{
+	display: block;
+	margin: 0 auto;
+	color: rgb( 37, 175, 245 );
+}
+
+/*审核中*/
+.bill-auditing{
+	  position: relative;
+    border: 1px solid #e1e1e6;
+    border-top:none;
+    padding:30px 15px 5px;
+    background: #fff url(../i/bill/wheel.png) repeat-x;
+    background-position: bottom;
+    border-bottom: none;
+    position:relative;
+}
+.auditingbg{width:7px;position:absolute;top:42px;}
+.bill-auditing li{    padding: 4px 0 20px 16px;position: relative;}
+.bill-audittip{
+    border-radius: 12px 12px 12px 12px;
+    text-align: center;
+    line-height: 1;
+    font-size: 14px;
+    color: white;
+    display: inline-block;
+    padding:5px 12px;
+}
+.bill-bluebg{
+	background-color: #25aff5;
+}
+.bill-greybg{
+	background-color: #d2d2d6;
+}
+.bill-redbg{
+	background-color: #ff4757;
+}
+.bill-redbg + .bill-time{
+	color:#ff4757;
+}
+.bill-bluebg + .bill-time{
+color: rgb(37,175,245);
+}
+.bill-time{
+	font-size: 12px;
+  
+  padding-left: 8px;
+  padding-top: 5px;
+}
+ 
+.bill-list li{
+	padding:16px 0px;
+	border-top:1px solid #EFEFF4;
+	box-sizing: border-box;
+}
+.bill-list li .texttitle{
+	font-size: 12px;
+	color:#000;
+}
+.bill-list li .textdetail{
+	font-size: 12px;
+	color: rgb(150, 150, 150)
+}
+a.bill-reupload,a.bill-reupload:visited{
+	font-size: 12px;
+	color:#FF4757;
+	border-radius:15px;
+	border:1px solid #FF4757;
+	padding:5px 10px;
+	margin:0 auto;
+  display: inline-block;
+}
+/*帮助中心*/
+.helpnavBox .hd{ height:56px; line-height:56px;  font-size:12px; background:#25aff5;border-bottom: 1px solid #e1e1e6;width: 100%;overflow: auto; /*padding:0 5px;*/box-sizing: border-box;}
+.helpnavBox .hd ul{   height:55px; top:0; overflow: auto; /*width: 362px; */width:100%; box-sizing: border-box;}
+.helpnavBox .hd ul li{   float: left;  /*width: 72px; */    width: 20%; text-align: center; }
+.helpnavBox .hd ul .on{   }
+.helpnavBox .hd ul .on a{ display:block; /* 修复Android 4.0.x 默认浏览器当前样色无效果bug */  }
+.helpnavBox .bd{ background-color: #fff;border-top: 1px solid #e1e1e6;}
+.helpnavBox .tempWrap{margin-top: 12px;}
+.helpnavBox .bd li {border-bottom: 1px solid #e1e1e6;padding:0 0 0 15px}
+.helpnavBox .bd li dl dt{position: relative;padding:16px 15px 16px 0;font-size: 14px;color: #000;}
+.helpnavBox .bd li dl dd{border-top: 1px solid #efeff4;padding:15px 15px 15px 0px;font-size: 12px;color: rgb(120, 120, 120);}
+.helpnavBox .bd li a{ color:#666;  }
+.helpnavBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0); } 
+.helpnavBox .bd ul{padding: 0;}
+.helpnavBox .hd .on .tabmenu { color: #FFF;}
+.helpnavBox .hd a.tabmenu {line-height:50px;display: block;color: #FFF;/*width: 56px;*/ margin: 0 auto; height: 55px;box-sizing: border-box;line-height: 1;padding-top: 12px;}
+.activeqa + .qacontent{display: block;box-sizing: border-box;}
+.qacontent{display: none;}
+.tabmenutext{
+	padding-top: 6px;
+	display: inline-block;
+	padding-bottom: 7px;
+}
+.helpnavBox .hd .on a.tabmenu .tabmenutext{
+	border-bottom: 2px solid #FFF;
+}
+[class^='helpicon-'] {
+    background: url(../i/helpcentericon.png) no-repeat;
+    background-size: 16px ;
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: 0 auto;
+}
+.helpicon-jiedaiQ{
+	background-position: 0 0;
+}
+.helpicon-huankuaiQ{
+	background-position: 0 -32px;
+}
+.helpicon-feiyongQ{
+	background-position: 0 -62px;
+}
+.helpicon-zhuanghuQ{
+	background-position: 0 -124px;
+}
+.helpicon-linkQ{
+	background-position: 0 -93px;
+}
+.helpicon-jieshiQ{
+	background-position: 0 -155px;
+}
+/*上传身份证*/
+.upload-wrap{padding:15px;padding-bottom: 116px;}
+.upload-toptip{font-size: 12px;color:#000;}
+.upload-spanwaring{
+  		width:14px;
+  		height:14px;
+  		border:1px solid #3fb8f6;
+  		border-radius: 100%;
+  		display: inline-block;
+  		text-align: center;
+  		vertical-align: middle;
+  		box-sizing: border-box;
+  		line-height: 1;
+  		padding-right:1px;
+  		color: #3fb8f6;
+  		font-size: 12px;
+  	} 
+.upload-order{
+  		background-color: #25aff5;
+  		width:18px;
+  		height:18px;
+  		border:1px solid #3fb8f6;
+  		border-radius: 100%;
+  		display: inline-block;
+  		text-align: center;
+  		vertical-align: middle;
+  		box-sizing: border-box;
+  		line-height: 1;
+  		padding:2px;
+  		color: #fff;
+  		font-size: 12px;
+  		margin-right: 14px;
+  		margin-top:-2px;
+  	}
+  	ul.uploadlist{margin-top: 10px;}      	
+  	ul.uploadlist li{padding:15px 0;box-sizing: border-box;border-bottom: 1px solid #ccc;}
+  	ul.uploadlist li .uploaditem-half{float: left;width:50%;vertical-align: middle;height:100%;}
+  	ul.uploadlist li .uploaditem-half:last-of-type{float: left;width:50%;text-align: right;}
+  	.uploaditem-text{display: inline-block;height:92px;line-height: 92px;}
+  	.uploaditem-img{display: inline-block;border:1px solid #cccccc;position: relative;    width: 124px;    height: 92px;overflow: hidden;}
+  	.uploaditem-img img{display: inline-block; width:100%;}
+  	.uploaditem-img .uploaditem-tips{position: absolute;bottom: 0;left: 0;text-align: center;font-size: 12px;color: #fff;background-color: rgba(97,96,94,0.8);width:100%;padding:4px 0;}
+  	.upload-fotter{padding:15px;box-sizing: border-box;position: fixed;width: 100%;bottom: 0;left: 0;background: #fff;}
+  	.upload-fotter button{width:100%;font-size: 14px;color:#fff;background:#25aff5;height: 32px;border-radius: 3px;}
+  	.bill-record-left{
+  		box-sizing: border-box;
+    text-align: left;
+    padding-left: 15px;
+  	}
+    	.bill-record-right{
+  		box-sizing: border-box;
+    text-align: right;
+    padding-right: 15px;
+  	}
+@media only screen and (max-height: 480px) and (max-width: 320px) {
+	.bill-bottomhelp{
+	position: fixed;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+	background-color: #efeff4;
+}
+#box{
+	padding-bottom: 50px;
+}
+}  	
